@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: bold;
+  src: url("../assets/fonts/RobotoCondensed/RobotoCondensed-Bold.woff2") format('woff2'),
+  url("../assets/fonts/RobotoCondensed/RobotoCondensed-Bold.woff") format('woff'),
+  url("../assets/fonts/RobotoCondensed/RobotoCondensed-Bold.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/RobotoCondensed/RobotoCondensed-Regular.woff2") format('woff2'),
+  url("../assets/fonts/RobotoCondensed/RobotoCondensed-Regular.woff") format('woff'),
+  url("../assets/fonts/RobotoCondensed/RobotoCondensed-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/NotoSansKR/NotoSansKR-Regular.woff2") format('woff2'),
+  url("../assets/fonts/NotoSansKR/NotoSansKR-Regular.woff") format('woff'),
+  url("../assets/fonts/NotoSansKR/NotoSansKR-Regular.otf") format('truetype')
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../assets/fonts/NotoSansKR/NotoSansKR-Medium.woff2") format('woff2'),
+  url("../assets/fonts/NotoSansKR/NotoSansKR-Medium.woff") format('woff'),
+  url("../assets/fonts/NotoSansKR/NotoSansKR-Medium.otf") format('truetype')
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: bold;
+  src: url("../assets/fonts/NotoSansKR/NotoSansKR-Bold.woff2") format('woff2'),
+  url("../assets/fonts/NotoSansKR/NotoSansKR-Bold.woff") format('woff'),
+  url("../assets/fonts/NotoSansKR/NotoSansKR-Bold.otf") format('truetype')
+}
+
+
+
+body {
+  background-color: rgb(255, 246, 226);
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.logo {
+  height: 70px;
+  width: auto;
+}
+
+.topnav {
+  /* background-color: #ffffff; */
+  position: fixed;
+  top: 0;
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 0.2rem solid #383838;
+  background-color: #ffae00;
+}
+
+.navgroup {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.topnav a {
+  float: right;
+  color: #181818;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-bottom: solid #383838;
+  margin-bottom: 5px;
+
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  color: rgb(255, 246, 226);
+  background-color: #383838;
+  border-bottom: solid rgb(255, 246, 226);
+}
+
+.topnav a.active {
+  color: rgb(255, 246, 226);
+  background-color: #383838;
+  border-bottom: solid rgb(255, 246, 226);
+}
+
+.contentbox {
+  margin-top: 200px;
+  padding-left: 33%;
+  padding-right: 33%;
+  text-align: center;
+
+  font-family: "Noto Sans KR";
+  font-weight: normal;
+}
+
+.incontent {
+  height: 150px;
+  margin-bottom: 200px;
+}
+
+h1 {
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  font-size: 25px;
+}
+
+p {
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.koreanheader {
+  font-family: "Noto Sans KR";
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.koreanh2 {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: left;
+  font-family: "Noto Sans KR";
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* textbox */
+.boxcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
