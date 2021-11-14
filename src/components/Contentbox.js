@@ -1,9 +1,12 @@
 import "./style.css";
 import mainlogo from '../assets/logo/big/yellow.png';
+import Topnav from './Topnav';
 
 function Contentbox() {
   return (
-    <div class="contentbox">
+    <div>
+      <Topnav/>
+      <div class="contentbox">
       <img class="logo incontent" src={mainlogo} />
       <article class="maincontent">
         <h1>About us</h1>
@@ -64,6 +67,7 @@ function Contentbox() {
         </p>
       </article>
     </div>
+  </div>
   );
 }
 
