@@ -1,6 +1,7 @@
 import "./style.css";
 import mainlogo from '../assets/logo/big/yellow.png';
 import Topnav from './Topnav';
+import React from 'react';
 
 function Contentbox() {
   return (

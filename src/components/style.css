@@ -72,7 +72,7 @@ body::-webkit-scrollbar {
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-
+  align-items: center;
   border-bottom: 0.2rem solid #383838;
   background-color: #ffae00;
 }
@@ -111,29 +111,22 @@ body::-webkit-scrollbar {
   border-bottom: solid rgb(255, 246, 226);
 }
 
-@media screen and (max-width: 768px) {
-  .navgroup {
-    display: none;
-  }
-
-  .logo {
-    height: 50px;
-    width: auto;
-  }
+.menuicon {
+  display: none;
 }
 
 .contentbox {
-  margin-top: 200px;
-  padding-left: 33%;
-  padding-right: 33%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 40rem;
+  margin: 200px auto auto auto;
   text-align: center;
-
   font-family: "Noto Sans KR";
   font-weight: normal;
 }
 
 .incontent {
-  height: 150px;
+  height: 10em;
   margin-bottom: 200px;
 }
 
@@ -175,4 +168,59 @@ p {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.inputbox {
+  width: 800px;
+  height: 200px;
+  font-size: large;
+  font-family: inherit;
+  background-color: white;
+  resize: none;
+  border: solid #383838;
+  padding: 1rem;
+}
+
+.submitbutton {
+  margin-top: 10px;
+  width: 200px;
+  height: 40px;
+  background-color: #ffae00;
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.outputbox {
+  width: 800px;
+  height: 200px;
+  margin-top: 5rem;
+  font-size: large;
+  text-align: left;
+  background-color: white;
+  border: solid #383838;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .menuicon {
+    display: block;
+
+  }
+
+  .navgroup {
+    display: none;
+  }
+
+  .logo {
+    height: 50px;
+    width: auto;
+  }
+
+  .incontent {
+    height: 5em;
+    margin-bottom: 200px;
+  }
+
+
 }
