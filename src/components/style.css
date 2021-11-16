@@ -147,6 +147,12 @@ p {
   margin-bottom: 50px;
 }
 
+.intro {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold
+  ;
+}
 .koreanheader {
   font-family: "Noto Sans KR";
   font-weight: 600;
@@ -185,6 +191,18 @@ p {
   margin-top: 10px;
   width: 200px;
   height: 40px;
+  background-color: #ffae00;
+  font-family: "Roboto Condensed";
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.download {
+  margin-top: 5px;
+  margin-bottom: 5rem;
+  width: 200px;
+  height: 40px;
+  
   background-color: #ffae00;
   font-family: "Roboto Condensed";
   font-weight: bold;

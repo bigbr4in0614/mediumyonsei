@@ -10,6 +10,11 @@ function Contentbox() {
       <div class="contentbox">
       <img class="logo incontent" src={mainlogo} />
       <article class="maincontent">
+      <p class = "intro">
+          Medium은 KoELECTRA 기반의 혐오표현 차단 크롬 확장 프로그램입니다. 
+      </p>
+      <a href="https://github.com/bigbr4in0614/hate-speech-detection/releases" target="_blank"><button class="download">Download</button></a>
+        
         <h1>About us</h1>
         <p>
           안녕하세요, 저희는 2021학년도 연세대학교 RC창의플랫폼의 Team
