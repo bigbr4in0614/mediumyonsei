@@ -147,11 +147,14 @@ p {
   margin-bottom: 50px;
 }
 
+.playinstruction {
+  margin-bottom: 50px;
+  font-size: 1em;
+}
 .intro {
   margin-top: 1rem;
   text-align: center;
-  font-weight: bold
-  ;
+  font-weight: bold;
 }
 .koreanheader {
   font-family: "Noto Sans KR";
@@ -188,7 +191,7 @@ p {
 }
 
 .submitbutton {
-  margin-top: 10px;
+  margin-top: 20px;
   width: 200px;
   height: 40px;
   background-color: #ffae00;
@@ -241,4 +244,12 @@ p {
   }
 
 
+}
+
+.hatelabel {
+  color: red;
+}
+
+.offlabel {
+  color: orange;
 }
