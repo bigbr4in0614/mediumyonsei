@@ -16,7 +16,7 @@ function Playground() {
         </h1>
         <p className="playinstruction">
           두 단어 이상의 문장을 입력하고 Submit 버튼을 누르면 문장 단위로 
-          <span className="hatelabel"> 혐오 표현</span>/ <span className="offlabel">공격적 표현</span>/일반적 표현 으로
+          <span className="hatelabel"> 혐오 표현</span>{" / "}<span className="offlabel">공격적 표현</span>{" / "}일반적 표현으로
           구별되어 아래의 박스에 표시됩니다.
         </p>
         <div class="boxcontainer">
@@ -26,7 +26,8 @@ function Playground() {
             onChange={(event) => {
               setUserInput(event.target.value);
             }}
-          ></textarea>
+          >
+          </textarea>
           <button
             class="submitbutton"
             id="submit"
@@ -41,6 +42,7 @@ function Playground() {
           </button>
           <div class="outputbox" id="output" readOnly>
             {userOutput[1]?.map((val, i) => (
+              <>
               <span
                 style={{
                   color:
@@ -52,7 +54,9 @@ function Playground() {
                 }}
               >
                 {val}
-              </span>
+              </span> 
+              {i != userOutput[1].length-1 && <span> / </span>}
+              </>
             ))}
           </div>
         </div>
